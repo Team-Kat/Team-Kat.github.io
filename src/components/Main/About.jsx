@@ -68,8 +68,8 @@ const About = () => (
                 <h1>고야이 고야이!</h1>
                 <h3>이 팀은 10대로 이루어진 개발 팀입니다!<br />우리는 주로 웹사이트나 봇 등을 만들어요</h3>
 
-                <a type = 'button' href = 'https://discord.gg/R5UG5mR'><Button style = {{color: 'white', backgroundColor: '#2185d0'}}><FontAwesomeIcon icon = {faDiscord} /> 디스코드 서버</Button></a>
-                <a type = 'button' href = 'https://github.com/Team-Kat'><Button style = {{color: 'white', backgroundColor: 'black', marginLeft: '10px'}}><FontAwesomeIcon icon = {faGithub} /> 깃허브</Button></a>
+                <a type = 'button' href = 'https://discord.gg/R5UG5mR' target="_blank"><Button style = {{color: 'white', backgroundColor: '#2185d0'}}><FontAwesomeIcon icon = {faDiscord} /> 디스코드 서버</Button></a>
+                <a type = 'button' href = 'https://github.com/Team-Kat' target="_blank"><Button style = {{color: 'white', backgroundColor: 'black', marginLeft: '10px'}}><FontAwesomeIcon icon = {faGithub} /> 깃허브</Button></a>
             </div>
 
             <div className = 'second section' data-aos = 'fade-left' data-aos-duration = '2000'>
