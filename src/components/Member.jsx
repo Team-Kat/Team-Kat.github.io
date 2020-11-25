@@ -6,18 +6,16 @@ import { faGithub, faDiscord } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const StyledPopup = styled.div`
+    &-content {
+        width: 50vw;
+    }
+
     width: 50vw;
     height: 250px;
     background-color: white;
 
     overflow-x: hidden;
     overflow-y: hidden;
-
-    border-radius: 50px;
-    box-shadow: 0px 0px 20px 10px grey;
-
-    padding-left: 20px;
-    padding-right: 20px;
 
     .close {
         cursor: pointer;
@@ -35,13 +33,19 @@ const StyledPopup = styled.div`
 
     .content {
         margin-top: 25px;
-        display: grid;
-        grid-template-columns: 250px 500px;
+        @media (min-width: 1000px) {
+            display: grid;
+            grid-template-columns: 250px 500px;
+        }
 
         .avatar {
             width: 200px;
             height: 200px;
             border-radius: 100px;
+
+            @media (max-width: 1000px) {
+                display: none;
+            }
         }
 
         .info {
@@ -56,13 +60,13 @@ const StyledPopup = styled.div`
             h3 {
                 margin-top: 5px;
                 margin-bottom: 1px;
+                white-space: pre-line;
             }
 
             a {
                 color: black;
                 text-decoration: none;
                 margin-right: 5px;
-                margin-top: 1px
             }
         }
     }
