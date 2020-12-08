@@ -14,6 +14,14 @@ const MemberList = [
         desc: '소개 없음',
         avatar: 'https://avatars2.githubusercontent.com/u/68010770'
     }
+    {
+        name: 'Decave',
+        discordID: 717044065635532810,
+        github: 'decave27',
+        desc: '야옹',
+        avatar: 'https://avatars3.githubusercontent.com/u/67851900'
+    }
 ]
+
 
 export default MemberList
