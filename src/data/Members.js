@@ -13,7 +13,7 @@ const MemberList = [
         github: 'pikokr',
         desc: '소개 없음',
         avatar: 'https://avatars2.githubusercontent.com/u/68010770'
-    }
+    },
     {
         name: 'Decave',
         discordID: 717044065635532810,
