@@ -20,6 +20,13 @@ const MemberList = [
         github: 'decave27',
         desc: '야옹',
         avatar: 'https://avatars3.githubusercontent.com/u/67851900'
+    },
+    {
+        name: 'fxrcha',
+        discordID: 295371171979853825,
+        github: 'fxrcha',
+        desc: '그러니까 내가 누군가르 좋아한다는 사실이 그사람에게느 상처가 될수도 있는거죠',
+        avatar: 'https://avatars3.githubusercontent.com/u/46896125'
     }
 ]
 
