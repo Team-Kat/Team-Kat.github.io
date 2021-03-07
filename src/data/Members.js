@@ -3,7 +3,7 @@ const MemberList = [
         name: '키키',
         discordID: 758244072573370380,
         github: 'kiki7000',
-        desc: '초등학생 개발자 키키입니다',
+        desc: '응애 나애기키키',
         avatar: 'https://avatars2.githubusercontent.com/u/51841836'
     },
 
