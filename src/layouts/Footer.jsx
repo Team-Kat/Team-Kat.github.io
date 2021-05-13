@@ -16,10 +16,10 @@ const StyledFooter = styled.div`
     text-align: center;
 
     .logo {
-        width: 80px;
+        width: 70px;
         height: 100px;
 
-        margin-top: 5vh;
+        margin-top: 7vh;
     }
 `
 

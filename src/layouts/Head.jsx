@@ -7,7 +7,7 @@ import image from "../../public/img/teamkat.png";
 
 const HeadContainer = styled.div`
     width: 100vw;
-    height: 95vh;
+    height: 80vh;
 
     margin-bottom: 5vh;
 
@@ -21,11 +21,11 @@ const HeadContainer = styled.div`
     color: white;
 
     .logo {
-        width: 80px;
+        width: 70px;
         height: 100px;
 
         margin-top: 20vh;
-        margin-bottom: 1px;
+        margin-bottom: 5px;
     }
 
     h1 {
@@ -36,13 +36,13 @@ const HeadContainer = styled.div`
 
     @keyframes dropdiv {
         0% {
-            height: 80vh;
+            height: 60vh;
             border-bottom-left-radius: 100px;
             border-bottom-right-radius: 100px;
         }
 
         100% {
-            height: 95vh;
+            height: 80vh;
             border-bottom-left-radius: 70%;
             border-bottom-right-radius: 70%;
         }

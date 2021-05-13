@@ -84,8 +84,7 @@ const About = () => (
                 <h1>샌즈샌즈한 프로젝트~</h1>
                 <h3>우리는 2020년 11월부터 시작해서 많은 프로젝트를 만들고 있어요!<br />아직은 완성된 프젝이 없지만 기대하셔도 되요</h3>
 
-                <Button style={{ color: "white", backgroundColor: "#7289DA" }}><FontAwesomeIcon icon={faComments} /> 디스커뮤(개발중)</Button>
-                <Button style={{ color: "white", backgroundColor: "black", marginLeft: "10px", marginBottom: "20px" }}><FontAwesomeIcon icon={faRobot} /> KDBL(개발중)</Button>
+                <Button style={{ color: "white", backgroundColor: "#7289DA", marginBottom: "20px" }}><FontAwesomeIcon icon={faComments} /> 디스커뮤(개발중)</Button>
                 <hr />
             </div>
         </AboutContainer>
