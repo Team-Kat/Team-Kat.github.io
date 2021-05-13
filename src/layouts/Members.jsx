@@ -26,7 +26,7 @@ const MembersContainer = styled.div`
 const Members = () => (
     <div>
         <MembersContainer data-aos="fade-up" data-aos-duration="2000">
-            <h1>팀원들이에요!</h1>
+            <h1>팀원{/*이라 쓰고 노예라 읽는다*/}들이에요!</h1>
             {MemberList.map(m => <Member  {...m} />)}
         </MembersContainer>
     </div>

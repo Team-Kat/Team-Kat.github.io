@@ -1,102 +1,50 @@
 import React from "react";
 import styled from "styled-components";
-import Popup from "reactjs-popup";
 
 import { faGithub, faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const StyledPopup = styled.div`
-    &-content {
-        width: 50vw;
-    }
+const MemberContainer = styled.div`
+    display: inline-block;
+    filter: brightness(100%);
 
-    width: 50vw;
-    height: 250px;
-    background-color: white;
-
-    overflow-x: hidden;
-    overflow-y: hidden;
-
-    .close {
-        cursor: pointer;
+    .overlay {
         position: absolute;
-        display: block;
-        padding: 2px 5px;
-        line-height: 20px;
-        right: -10px;
-        top: -10px;
-        font-size: 24px;
-        background: #ffffff;
-        border-radius: 18px;
-        border: none;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+
+        top: 40%;
+        left: 10%;
+        text-align: center;
+
+        .icon {
+            color: black;
+            text-decoration: none;
+            font-size: 30px;
+        }
     }
 
-    .content {
-        margin-top: 25px;
-        @media (min-width: 1000px) {
-            display: grid;
-            grid-template-columns: 250px 500px;
-        }
+    &:hover {
+        filter: brightness(70%);
+        transition: all 0.5s ease;
 
-        .avatar {
-            width: 200px;
-            height: 200px;
-            border-radius: 100px;
-
-            @media (max-width: 1000px) {
-                display: none;
-            }
-        }
-
-        .info {
-            h1, h3 {
-                font-weight: 400;
-            }
-
-            h1 {
-                margin-bottom: 5px;
-            }
-
-            h3 {
-                margin-top: 5px;
-                margin-bottom: 1px;
-                white-space: pre-line;
-            }
-
-            a {
-                color: black;
-                text-decoration: none;
-                margin-right: 5px;
-            }
+        .overlay {
+            opacity: 1;
         }
     }
 `
 
-const Member = ({ name, discordID, desc, github, avatar }) => (
-    <Popup
-        trigger={<img className="trigger" alt="user avatar" src={avatar} style={{ width: "200px", height: "200px", borderRadius: "100px" }} />}
-        modal
-        nested
-    >
-        {close => (
-            <StyledPopup className="modal">
-                <button className="close" onClick={close}>
-                    &times;
-                </button>
-
-                <div className="content">
-                    <img className="avatar" alt="avatar" src={avatar} />
-                    <div className="info">
-                        <h1>{name}</h1>
-                        <h3>{desc}</h3>
-
-                        <a href={`https://github.com/${github}`}><FontAwesomeIcon icon={faGithub} /></a>
-                        <a href={`https://discord.com/users/${discordID}`}><FontAwesomeIcon icon={faDiscord} /></a>
-                    </div>
-                </div>
-            </StyledPopup>
-        )}
-    </Popup>
+const Member = ({ discordID, github, avatar }) => (
+    <MemberContainer>
+        <img className="trigger" alt="user avatar" src={avatar} style={{ width: "200px", height: "200px", borderRadius: "100px" }} />
+        <div className="overlay">
+            <a href={`https://github.com/${github}`} className="icon" style={{ marginRight: "15px" }}><FontAwesomeIcon icon={faDiscord} /></a>
+            <a href={`https://discord.com/users/${discordID}`} className="icon"><FontAwesomeIcon icon={faGithub} /></a>
+        </div>
+    </MemberContainer>
 )
 
 export default Member;
