@@ -1,9 +1,9 @@
 import React from 'react'
 
-import Head from '../components/Main/Head'
-import About from '../components/Main/About'
-import Members from '../components/Main/Members'
-import Footer from '../components/Main/Footer'
+import Head from '../layouts/Head'
+import About from '../layouts/About'
+import Members from '../layouts/Members'
+import Footer from '../layouts/Footer'
 
 const Main = () => (
     <>

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import Zoom from 'react-reveal/Zoom'
 
-import image from '../../../public/img/teamkat.png'
+import image from '../../public/img/teamkat.png'
 
 const HeadContainer = styled.div`
     width: 100vw;
@@ -52,7 +52,7 @@ const HeadContainer = styled.div`
 const Head = () => (
     <HeadContainer>
         <Zoom top>
-            <img className = 'logo' src = {image} />
+            <img className='logo' src={image} />
             <h1>Team Kat</h1>
         </Zoom>
     </HeadContainer>
