@@ -1,7 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
-import image from '../../public/img/teamkat.png'
+import image from "../../public/img/teamkat.png";
 
 const StyledFooter = styled.div`
     width: 100vw;
@@ -23,10 +23,10 @@ const StyledFooter = styled.div`
     }
 `
 
-const Footer = ({ name, discordID, desc, github, avatar }) => (
+const Footer = () => (
     <StyledFooter>
-        <img className='logo' src={image} />
+        <img className="logo" src={image} />
     </StyledFooter>
 )
 
-export default Footer
+export default Footer;

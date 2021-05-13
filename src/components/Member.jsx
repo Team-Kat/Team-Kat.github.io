@@ -1,9 +1,9 @@
-import React from 'react'
-import styled from 'styled-components'
-import Popup from 'reactjs-popup'
+import React from "react";
+import styled from "styled-components";
+import Popup from "reactjs-popup";
 
-import { faGithub, faDiscord } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faDiscord } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const StyledPopup = styled.div`
     &-content {
@@ -74,24 +74,24 @@ const StyledPopup = styled.div`
 
 const Member = ({ name, discordID, desc, github, avatar }) => (
     <Popup
-        trigger = {<img className = 'trigger' alt = 'user avatar' src = {avatar} style = {{width: '200px', height: '200px', borderRadius: '100px'}} />}
+        trigger={<img className="trigger" alt="user avatar" src={avatar} style={{ width: "200px", height: "200px", borderRadius: "100px" }} />}
         modal
         nested
     >
         {close => (
-            <StyledPopup className = 'modal'>
+            <StyledPopup className="modal">
                 <button className="close" onClick={close}>
                     &times;
                 </button>
-                
-                <div className = 'content'>
-                    <img className = 'avatar' alt = 'avatar' src = {avatar} />
-                    <div className = 'info'>
-                        <h1>{ name }</h1>
-                        <h3>{ desc }</h3>
 
-                        <a href = { `https://github.com/${github}` }><FontAwesomeIcon icon = {faGithub} /></a>
-                        <a href = { `https://discord.com/users/${discordID}` }><FontAwesomeIcon icon = {faDiscord} /></a>
+                <div className="content">
+                    <img className="avatar" alt="avatar" src={avatar} />
+                    <div className="info">
+                        <h1>{name}</h1>
+                        <h3>{desc}</h3>
+
+                        <a href={`https://github.com/${github}`}><FontAwesomeIcon icon={faGithub} /></a>
+                        <a href={`https://discord.com/users/${discordID}`}><FontAwesomeIcon icon={faDiscord} /></a>
                     </div>
                 </div>
             </StyledPopup>
@@ -99,4 +99,4 @@ const Member = ({ name, discordID, desc, github, avatar }) => (
     </Popup>
 )
 
-export default Member
+export default Member;

@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 
-import TextContainer from '../styles/TextContainer'
+import TextContainer from "../styles/TextContainer";
 
 const Privacy = () => (
     <TextContainer>
@@ -12,7 +12,7 @@ const Privacy = () => (
             • 서비스 가입 및 관리<br />
             • 서비스 제공<br />
             • 등등<br /><br />
-        
+
 
             <h3>2. 개인정보의 처리 및 보유 기간</h3><br />
             Team Kat에서는 다음과 같은 항목들을 저장합니다<br /><br />
@@ -62,4 +62,4 @@ const Privacy = () => (
     </TextContainer>
 )
 
-export default Privacy
+export default Privacy;

@@ -1,7 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
     width: 100vw;
@@ -43,9 +43,9 @@ const Container = styled.div`
 
 const NotFound = () => (
     <Container>
-        <h1 className = 'information'>그르르... 페이지가 없다....</h1>
-        <Link to = '/'><button className = 'goBackButton'>돌아가기</button></Link>
+        <h1 className="information">그르르... 페이지가 없다....</h1>
+        <Link to="/"><button className="goBackButton">돌아가기</button></Link>
     </Container>
 )
 
-export default NotFound
+export default NotFound;

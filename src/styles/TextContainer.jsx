@@ -1,14 +1,14 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const TextContainer = styled.div`
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
     width: 50vw;
     margin-left: auto;
     margin-right: auto;
     
     margin-top: 30px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 
     @media (max-width: 600px) {
         width: 80vw;
@@ -37,4 +37,4 @@ const TextContainer = styled.div`
     }
 `
 
-export default TextContainer
+export default TextContainer;

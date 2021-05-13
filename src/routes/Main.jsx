@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
-import Head from '../layouts/Head'
-import About from '../layouts/About'
-import Members from '../layouts/Members'
-import Footer from '../layouts/Footer'
+import Head from "../layouts/Head";
+import About from "../layouts/About";
+import Members from "../layouts/Members";
+import Footer from "../layouts/Footer";
 
 const Main = () => (
     <>
@@ -14,4 +14,4 @@ const Main = () => (
     </>
 )
 
-export default Main
+export default Main;

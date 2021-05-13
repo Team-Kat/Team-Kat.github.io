@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const Button = styled.button`
     width: 150px;
@@ -14,4 +14,4 @@ const Button = styled.button`
     }
 `
 
-export default Button
+export default Button;
