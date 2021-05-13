@@ -41,8 +41,8 @@ const Member = ({ discordID, github, avatar }) => (
     <MemberContainer>
         <img className="trigger" alt="user avatar" src={avatar} style={{ width: "200px", height: "200px", borderRadius: "100px" }} />
         <div className="overlay">
-            <a href={`https://github.com/${github}`} className="icon" style={{ marginRight: "15px" }}><FontAwesomeIcon icon={faDiscord} /></a>
-            <a href={`https://discord.com/users/${discordID}`} className="icon"><FontAwesomeIcon icon={faGithub} /></a>
+            <a href={`https://github.com/${github}`} className="icon" style={{ marginRight: "15px" }}><FontAwesomeIcon icon={faGithub} /></a>
+            <a href={`https://discord.com/users/${discordID}`} className="icon"><FontAwesomeIcon icon={faDiscord} /></a>
         </div>
     </MemberContainer>
 )
