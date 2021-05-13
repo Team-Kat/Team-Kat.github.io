@@ -16,8 +16,8 @@ const StyledFooter = styled.div`
     text-align: center;
 
     .logo {
-        width: 120px;
-        height: 120px;
+        width: 80px;
+        height: 100px;
 
         margin-top: 5vh;
     }

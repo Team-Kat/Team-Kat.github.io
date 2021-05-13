@@ -21,8 +21,8 @@ const HeadContainer = styled.div`
     color: white;
 
     .logo {
-        width: 150px;
-        height: 150px;
+        width: 80px;
+        height: 100px;
 
         margin-top: 20vh;
         margin-bottom: 1px;
